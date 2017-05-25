@@ -6,8 +6,11 @@ import { createStore } from 'redux';
 import reminders from './reducers/reducer';
 import './index.css'
 
-const store = createStore(reminders,
-window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
+const store = createStore(
+  reminders,
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+);
+
 
 ReactDOM.render(
   <Provider store={store}>
